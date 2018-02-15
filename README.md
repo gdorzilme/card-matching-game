@@ -13,5 +13,5 @@ Welcome to 'The Card Matching Game', a completely browser-based card matching ga
 
 ## How to Run
 
-1. [Download]( ) or [Clone]( ) the Repository.
+1. [Download](https://github.com/gdorzilme/card-matching-game/archive/master.zip) or [Clone](https://github.com/gdorzilme/card-matching-game.git) the Repository.
 2. Open `index.html` file to view the project in your browser.
