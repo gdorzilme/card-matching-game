@@ -1,90 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>The Card Matching Game</title>
-    <meta name="description" content="">
-    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
-    <link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/sweetalert2/7.11.0/sweetalert2.all.min.js">
-    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="css/app.css">
+	<meta charset="utf-8">
+	<title>The Card Matching Game</title>
+	<meta content="" name="description">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet prefetch">
+	<link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet prefetch">
+	<link href="https://cdn.jsdelivr.net/sweetalert2/7.11.0/sweetalert2.all.min.js" rel="stylesheet prefetch">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet prefetch">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link href="css/app.css" rel="stylesheet">
 </head>
 <body>
-
-    <div class="container">
-      <header>
-        <h1>The Card Matching Game</h1>
-      </header>
-
-         <div class="score-panel">
-        	<ul class="stars" id="stars"></ul>
-
-        	<span class="moves"> 0 </span> Move(s)
-
-          <span class="timer" id="timer">
-             <h3 class="info">Time: 00:00 </h3></span>
-          </div>
-            <div class="restart">
-        		<i class="fa fa-repeat" id= "reset-button"></i> Restart
-        	</div>
-          <ul class="deck" id="deck">
-                  <li id="0" class="card">
-                      <i class="fa fa-gem"></i>
-                  </li>
-                  <li id="1" class="card">
-                      <i class="fa fa-plane"></i>
-                  </li>
-                  <li id="2" class="card match">
-                      <i class="fa fa-anchor"></i>
-                  </li>
-                  <li id="3" class="card">
-                      <i class="fa fa-sun"></i>
-                  </li>
-                  <li id="4" class="card">
-                      <i class="fa fa-basketball-ball"></i>
-                  </li>
-                  <li id="5" class="card match">
-                      <i class="fa fa-anchor"></i>
-                  </li>
-                  <li id="6" class="card">
-                      <i class="fa fa-leaf"></i>
-                  </li>
-                  <li id="7" class="card">
-                      <i class="fa fa-motorcycle"></i>
-                  </li>
-                  <li id="8" class="card">
-                      <i class="fa fa-gem"></i>
-                  </li>
-                  <li id="9" class="card">
-                      <i class="fa fa-smile"></i>
-                  </li>
-                  <li id="10" class="card">
-                      <i class="fa fa-leaf"></i>
-                  </li>
-                  <li id="11" class="card">
-                      <i class="fa fa-smile"></i>
-                  </li>
-                  <li id="12" class="card open show">
-                      <i class="fa fa-sun"></i>
-                  </li>
-                  <li id="13" class="card">
-                      <i class="fa fa-motorcycle"></i>
-                  </li>
-                  <li id="14" class="card">
-                      <i class="fa fa-plane"></i>
-                  </li>
-                  <li id="15" class="card">
-                      <i class="fa fa-basketball-ball"></i>
-                  </li>
-          </ul>
-        </div>
-
-  
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    <script src='https://cdn.jsdelivr.net/sweetalert2/7.11.0/sweetalert2.all.min.js'></script>
-    <script src="js/app.js"></script>
+	<div class="container">
+		<header>
+			<h1>The Card Matching Game</h1>
+		</header>
+		<div class="score-panel">
+			<ul class="stars" id="stars"></ul><span class="moves">0</span> Move(s) <span class="timer" id="timer"></span>
+			<h3 class="info"><span class="timer" id="timer">Time: 00:00</span></h3><span class="timer" id="timer"></span>
+		</div>
+		<div class="restart">
+			<i class="fa fa-repeat" id="reset-button"></i> Restart
+		</div>
+		<ul class="deck" id="deck">
+			<li class="card" id="0"><i class="fa fa-gem"></i></li>
+			<li class="card" id="1"><i class="fa fa-plane"></i></li>
+			<li class="card" id="2"><i class="fa fa-anchor"></i></li>
+			<li class="card" id="3"><i class="fa fa-sun"></i></li>
+			<li class="card" id="4"><i class="fa fa-basketball-ball"></i></li>
+			<li class="card" id="5"><i class="fa fa-anchor"></i></li>
+			<li class="card" id="6"><i class="fa fa-leaf"></i></li>
+			<li class="card" id="7"><i class="fa fa-motorcycle"></i></li>
+			<li class="card" id="8"><i class="fa fa-gem"></i></li>
+			<li class="card" id="9"><i class="fa fa-smile"></i></li>
+			<li class="card" id="10"><i class="fa fa-leaf"></i></li>
+			<li class="card" id="11"><i class="fa fa-smile"></i></li>
+			<li class="card" id="12"><i class="fa fa-sun"></i></li>
+			<li class="card" id="13"><i class="fa fa-motorcycle"></i></li>
+			<li class="card" id="14"><i class="fa fa-plane"></i></li>
+			<li class="card" id="15"><i class="fa fa-basketball-ball"></i></li>
+		</ul>
+	</div>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'>
+	</script>
+	<script src='https://cdn.jsdelivr.net/sweetalert2/7.11.0/sweetalert2.all.min.js'>
+	</script>
+	<script src="js/app.js">
+	</script>
 </body>
 </html>
