@@ -117,7 +117,7 @@ function addStars() {
 		$('#stars').append('<li><i class="fa fa-star"></i></li>');
 	}
 }
-//Restarting the game
+//Restarting the game https://sweetalert2.github.io/
 $restart.bind('click', () => {
 	swal({
 		allowEscapeKey: false,
@@ -151,7 +151,7 @@ function init() {
 	$('.moves').html("0  ");
 	addStars(3);
 }
-//Open Popup showing results
+//Open Popup showing results https://sweetalert2.github.io/
 let gameOver = function(moves, score) {
 	let msg = score == 1 ? score + ' Star' : score + ' Stars';
 	swal({
