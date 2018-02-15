@@ -45,7 +45,7 @@ function toggleCard() {
 		timer.start();
 	}
 	if (openCards.length === 0) {
-		$(this).toggleClass("show open").animateCass('flipInY');
+		$(this).toggleClass("show open").animateCss('flipInY');
 		openCards.push($(this));
 		disableClick();
 	} else if (openCards.length === 1) {
